@@ -1,0 +1,6 @@
+:root {
+    --basalfont: 'baselneue', sans-serif;
+    --shadow: var(--primary);
+    --abstractbackground: url('/assets/abstractbackground.png');
+    --darkabstractbackground: url('/assets/darkabstractbackground.png');
+}

@@ -1,0 +1,89 @@
+/* Base Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--basalfont), Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: blanchedalmond;
+    background-attachment: fixed;
+}
+
+/* Ensure the body behaves like a flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Main content area should take up remaining space */
+main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+/* Links Section */
+.links-section {
+    display: flex;
+    justify-content: left;
+    gap: 100px;
+    padding: 40px;
+    text-align: center;  
+    margin: auto;
+}
+
+.links-section a {
+    flex-shrink: 0;
+    margin: 0 40px;
+}
+
+.links-section img {
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    opacity: 0.75;
+}
+
+.links-section img:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px whitesmoke;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 63.9375rem) {
+    .links-section {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        max-width: 50vw;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .links-section img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* Responsive Design for Tablets */
+@media (min-width: 64rem) {
+    .links-section {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+    }
+}
